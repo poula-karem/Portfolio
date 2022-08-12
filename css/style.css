@@ -1,0 +1,27 @@
+body {}
+
+
+/* Main Section */
+#main-section {
+    background-color: #395B64;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navigation {
+    list-style: none;
+}   
+
+
+/* Skills Section */
+
+ /* Info Section */
+
+/* Projects Section */
+
+/* Footer */
