@@ -1,26 +1,81 @@
-body {}
+:root {
+    /* Colors */
+    --primary-color: #395B64;
+    --secondary-color: #A5C9CA;
+    --dark-color: #2C3333;
+    --lite-color: #E7F6F2;
+}
+
+body {
+    margin: 0;
+}
 
 
 /* Main Section */
 #main-section {
-    background-color: #395B64;
+    background-color: var(--primary-color);
     text-align: center;
 }
 
 nav {
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     justify-content: space-between;
+    text-decoration: none;
+}
+
+nav h2 {
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    font-family: "Sacramento";
 }
 
 .navigation {
     list-style: none;
-}   
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
 
+.navigation :hover {
+    color: var(--secondary-color);
+    transition: 0.7s ease;
+}
+
+.titl {
+    padding-top: 5%;
+}
+
+.name {
+    color: var(--lite-color);
+    font-size: 250%;
+}
+
+.jop-name {
+    font-family: "Sacramento";
+    font-size: 500%;
+    color: var(--lite-color);
+    font-weight: 200;
+}
+
+.quotes {
+    padding: 5% 2% 8%;
+    text-align: left;
+    font-size: 150%;
+    color: #fff;
+}
 
 /* Skills Section */
 
- /* Info Section */
+/* Info Section */
 
 /* Projects Section */
 
