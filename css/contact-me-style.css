@@ -7,6 +7,14 @@
 }
 
 * {
+    /* 
+    margin: 0;
+    padding: 0;
+    outline: 0; ---
+    box-sizing: border-box; ---
+    border: none; 
+    */
+    text-decoration: none;
     scroll-behavior: smooth;
 }
 
@@ -23,7 +31,6 @@ nav {
     width: 90%;
     margin: auto;
     justify-content: space-between;
-    text-decoration: none;
 }
 
 nav h2 {
@@ -31,7 +38,6 @@ nav h2 {
 }
 
 nav a {
-    text-decoration: none;
     color: #000;
 }
 
@@ -132,11 +138,9 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 7%;
-    text-decoration: none;
 }
 
 .footer-icons a {
-    text-decoration: none;
     color: #000;
 }
 
