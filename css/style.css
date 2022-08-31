@@ -4,22 +4,37 @@
     --secondary-color: #A5C9CA;
     --dark-color: #2C3333;
     --lite-color: #E7F6F2;
+
+    /* Box Model */
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    ---card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }
 
 * {
-    /* 
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    outline: 0; ---
+    outline: 0;
+    /*
     box-sizing: border-box; ---
-    border: none; 
     */
+    border: none;
     text-decoration: none;
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+    overflow-x: hidden;
 }
 
 /* Main Section */
@@ -34,23 +49,21 @@ body {
 
 /* START Navigation Section */
 nav {
+    Padding-top: 1.2%;
     display: flex;
-    width: 90%;
+    width: 92%;
     margin: auto;
     justify-content: space-between;
 }
 
 nav h2 {
     font-size: 2rem;
+    font-family: "Sacramento";
+    cursor: pointer;
 }
 
 nav a {
     color: #000;
-}
-
-.logo {
-    font-family: "Sacramento";
-    cursor: pointer;
 }
 
 .navigation {
@@ -148,9 +161,10 @@ footer {
     align-items: center;
     width: 95%;
     margin: auto;
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 2%;
+    font-size: 110%;
     flex-direction: column;
+    height: 3em;
 }
 
 .footer-icons {
@@ -161,6 +175,10 @@ footer {
 
 .footer-icons a {
     color: #000;
+}
+
+footer p {
+    color: gray;
 }
 
 /* END Footer */

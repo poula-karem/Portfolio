@@ -28,7 +28,9 @@
 
         <!-- START Navigation -->
         <Nav>
-            <h2 class="logo"><a href="index.html">Poula</a></h2>
+            <a href="index.html" class="logo">
+                <h2>Poula</h2>
+            </a>
             <div class="navigation">
                 <a href="#skills-section">
                     <p>Skills</p>
@@ -36,7 +38,7 @@
                 <a href="#projects-section">
                     <p>Projects</p>
                 </a>
-                <a href="contact-me.html">
+                <a href="contact-me.html" class="active">
                     <p>Contact Me</p>
                 </a>
             </div>
@@ -46,19 +48,17 @@
         <!-- START Form -->
         <form action="mailto:paulakaremp@gmail.com" method="post">
             <div class="form-container">
+
                 <div class="name">
                     <input type="text" placeholder="First Name" name="First Name" value="">
                     <input type="text" placeholder="Last Name" name="Last Name" value="">
                 </div>
+                <input class="email" type="email" placeholder="Your E-Mail" name="E-Mail" value="">
 
-                <div>
-                    <input class="email" type="email" placeholder="Your E-Mail" name="E-Mail" value="">
-                </div>
+                <textarea class="massage" name="Massage" placeholder="Your Massage"></textarea>
 
-                <div>
-                    <textarea class="massage" name="Massage" placeholder="Your Massage"></textarea>
-                </div>
                 <button class="send" type="submit">Send</button>
+
             </div>
         </form>
 
