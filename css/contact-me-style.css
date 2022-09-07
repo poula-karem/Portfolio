@@ -18,21 +18,17 @@
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     outline: 0;
-    /*
-    box-sizing: border-box; ---
-    */
+    /* box-sizing: border-box; */
     border: none;
     text-decoration: none;
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "poppins", sans-serif;
-    text-align: center;
+    font-family: "serif";
     overflow-x: hidden;
 }
 
@@ -85,7 +81,7 @@ nav .active {
     justify-content: space-between;
     flex-direction: column;
     gap: 1em;
-    width: 50%;
+    width: 40%;
     margin: auto;
     padding: 8%;
 }
@@ -119,6 +115,8 @@ button {
 
 /* END Form */
 
+/* START Footer */
+
 footer {
     background: var(--lite-color);
 }
@@ -127,8 +125,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
-    margin: auto;
     padding: 2%;
     font-size: 110%;
     flex-direction: column;
@@ -146,7 +142,8 @@ footer {
 }
 
 footer p {
-    color: gray;
+    color: #8f8f8f;
 }
+
 
 /* END Footer */
