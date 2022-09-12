@@ -195,10 +195,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 2.5% 0;
     font-size: 110%;
     flex-direction: column;
-    height: 3em;
+    height: fit-content;
+    gap: 1em;
 }
 
 .footer-icons {
@@ -218,13 +219,13 @@ footer p {
 /* END Footer */
 
 @media only screen and (max-width: 1200px) {
-    /*Tablets [601px -> 1200px]*/
+    /* Tablets [601px -> 1200px] */
 }
 
 @media only screen and (max-width: 600px) {
-    /*Big smartphones [426px -> 600px]*/
+    /* Big Smartphones [426px -> 600px] */
 }
 
 @media only screen and (max-width: 425px) {
-    /*Small smartphones [325px -> 425px]*/
+    /* Small Smartphones [325px -> 425px] */
 }
