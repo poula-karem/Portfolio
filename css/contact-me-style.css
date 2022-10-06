@@ -1,8 +1,8 @@
 :root {
     /* Colors */
-    --primary-color: #395B64;
-    --secondary-color: #A5C9CA;
-    --dark-color: #2C3333;
+    --primary-color: rgb(34, 110, 147, 1);
+    --secondary-color: #0a49f6;
+    --links: #3a6cf4;
     --lite-color: #E7F6F2;
 
     /* Box Model */
@@ -32,58 +32,64 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    background: var(--primary-color);
+
+/* Start header */
+
+header {
+    Padding: 1rem;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
 }
 
-/* START Navigation Section */
-nav {
-    Padding-top: 1.2%;
+header .container {
     display: flex;
-    width: 92%;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
 }
 
-nav h2 {
-    font-size: 2rem;
-    font-family: "Sacramento";
-    cursor: pointer;
-}
-
-nav a {
+header a {
     color: #000;
-}
-
-.navigation {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
     cursor: pointer;
+    font-family: "lato";
+    font-weight: 300;
 }
 
-.navigation :hover {
-    color: var(--secondary-color);
+header h2 {
+    font-size: 2rem;
+    font-family: "lato";
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #3a6cf4;
     transition: 0.7s ease;
 }
 
 nav .active {
-    color: var(--secondary-color);
+    color: #3a6cf4;
 }
 
-/* END Navigation Section */
-
-/* START Form */
+/* END header */
 
 .form-container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 1em;
+    gap: 1rem;
     width: 55%;
     margin: auto;
-    padding: 8%;
+    padding: 8rem;
 }
 
 .name {
@@ -92,7 +98,7 @@ nav .active {
 }
 
 .massage {
-    height: 20em;
+    height: 20rem;
     resize: none;
 }
 
@@ -100,6 +106,9 @@ nav .active {
     background: var(--secondary-color);
     width: 25%;
     margin: auto;
+    color: #fff;
+    border: none !important;
+    cursor: pointer;
 }
 
 .send:hover {
@@ -111,32 +120,28 @@ textarea,
 button {
     padding: var(--search-padding);
     border-radius: var(--border-radius);
-    background: var(--lite-color);
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border: 1px solid #000;
 }
-
-/* 
-input,
-textarea,
-button:focus {} 
-*/
 
 /* END Form */
 
 /* START Footer */
 
 footer {
-    background: var(--lite-color);
+    background: var(--primary-color);
 }
 
-.footer-container {
+footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5% 0;
-    font-size: 110%;
+    padding: 2.5rem 0;
+    font-size: 1rem;
     flex-direction: column;
     height: fit-content;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .footer-icons {
