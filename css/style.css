@@ -37,6 +37,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Start general CSS */
+
+a {
+    cursor: pointer;
+}
+
+/* End general CSS */
+
 /* Start header */
 header {
     Padding: 1rem;
@@ -56,13 +64,12 @@ header .container {
 
 header a {
     color: #000;
-    cursor: pointer;
     font-family: "lato";
     font-weight: 300;
 }
 
 header h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "lato";
     font-weight: 300;
 }
@@ -74,13 +81,15 @@ nav {
     align-items: center;
 }
 
-nav a:hover {
-    color: #3a6cf4;
+nav a {
     transition: 0.7s ease;
 }
 
-/* END header */
+nav a:hover {
+    color: var(--links);
+}
 
+/* END header */
 
 /* Main Section */
 #main-section {
@@ -88,7 +97,7 @@ nav a:hover {
     background: #fff;
 }
 
-.main-container {}
+/* .main-container {} */
 
 .titl {
     Padding: 13rem 5rem;
@@ -109,8 +118,8 @@ nav a:hover {
 }
 
 .main-container img {
-    width: 40rem;
-    aspect-ratio: 19/11;
+    width: 32rem;
+    height: 20rem;
     position: absolute;
     right: 5rem;
     top: 13rem;
@@ -119,52 +128,125 @@ nav a:hover {
 
 .quotes {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #000;
-    Padding: 2rem 2rem;
+    Padding: 2rem;
 }
 
 /* START Skills Section */
-#skills-section {}
+#skills-section {
+    background: #f0f0f0;
+    Padding: 3rem;
+}
 
-.skills-container {}
+.skills-container {
+    width: 80%;
+    margin: auto;
+}
 
-.skills-container h3 {}
+.skills-container h3 {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 2rem;
+}
 
-
-.skills-icons {}
-
-.skills-icons i:hover {}
+.skills-icons {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}
 
 /* END Skills Section */
 
 
 /* START Info Section */
 
-#info-section {}
+#info-section {
+    background: var(--primary-color);
+    Padding: 1.5rem;
+}
 
-.info-container {}
+/* .info-container {} */
 
-.info-container a {}
+.info-container a {
+    transition: 0.7s ease;
+    color: #000;
+    font-style: italic;
+}
 
-.info-container a:hover {}
-
+.info-container a:hover {
+    color: #fff;
+}
 
 /* END Info Section */
 
 
 /* START Projects Section */
 
-#projects-section {}
+#projects-section {
+    background: #f0f0f0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
 
-.projects-container {}
+.projects-container {
+    width: 80%;
+    margin: auto;
+}
 
-.card {}
+.projects-container h3 {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 2rem;
+}
 
-.card .card-content {}
+.projects-container .cards {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
 
-.card .card-content img {}
+.projects-container .card {
+    border-radius: var(--card-border-radius);
+    background: #fff;
+    width: 15rem;
+    height: 20rem;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    transition: 0.7s ease;
+    margin: auto;
+}
 
+.projects-container .card:hover {
+    transform: scale(1.1);
+}
+
+.projects-container .card img {
+    width: 15rem;
+    height: 10rem;
+    border-radius: var(--card-border-radius);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.projects-container .card .info {
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects-container .card h4 {
+    color: #000;
+    transition: 0.7s ease;
+    display: inline-block;
+}
+
+.projects-container .card h4:hover {
+    color: var(--links);
+}
+
+.projects-container .card p {
+    padding-top: 1.5rem;
+}
 
 /* END Projects Section */
 
@@ -173,13 +255,13 @@ nav a:hover {
 
 footer {
     background: var(--primary-color);
+    padding: 2rem;
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 0;
     font-size: 1rem;
     flex-direction: column;
     height: fit-content;
@@ -197,7 +279,7 @@ footer .container {
 }
 
 footer p {
-    color: #8f8f8f;
+    color: #000;
 }
 
 /* END Footer */

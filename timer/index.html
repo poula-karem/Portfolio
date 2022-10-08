@@ -18,10 +18,10 @@
 
 
     <!-- CSS Style Sheets -->
-    <link rel="stylesheet" href="css/contact-me-style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Icon -->
-    <link rel="icon" href="icons/logo.ico">
-    <title>Contact Me - Poula Karem</title>
+    <link rel="icon" href="../icons/logo.ico">
+    <title>Timer - Poula Karem</title>
 </head>
 
 <body>
@@ -29,17 +29,17 @@
     <header>
         <div class="container">
 
-            <a href="index.html">
+            <a href="../index.html">
                 <h2 class="logo">Poula</h2>
             </a>
             <nav>
                 <a href="#skills-section">
                     <p>Skills</p>
                 </a>
-                <a href="#projects-section">
+                <a href="#projects-section" class="active">
                     <p>Projects</p>
                 </a>
-                <a href="contact-me.html" class="active">
+                <a href="contact-me.html">
                     <p>Contact Me</p>
                 </a>
             </nav>
@@ -48,25 +48,29 @@
     </header>
     <!-- END header -->
 
-    <div class="form-container">
+    <section id="main-section">
 
-        <!-- START Form -->
-        <form action="mailto:paulakaremp@gmail.com" method="post">
-
-            <div class="name">
-                <input type="text" placeholder="First Name" name="First Name" value="">
-                <input type="text" placeholder="Last Name" name="Last Name" value="">
+        <div class="start-container">
+            <div class="card">
+                <input type="number" placeholder="Hours" class="hou">
+                <input type="number" placeholder="Minutes" class="min">
+                <input type="number" placeholder="Seconds" class="sec">
             </div>
-            <input class="email" type="email" placeholder="Your E-Mail" name="E-Mail" value="">
+        </div>
 
-            <textarea class="massage" name="Massage" placeholder="Your Massage"></textarea>
+        <div class="btn start-btn">
+            <button class="start blue">Start Timer</button>
+            <button class="start-pomodoro red">Pomodoro Timer</button>
+        </div>
 
-            <button class="send" type="submit">Send</button>
+        <!-- ======== -->
 
-        </form>
+        <div class="timer-container">
+            <div class="cards"></div>
 
-    </div>
-    <!-- END Form -->
+            <div class="btn timer-btn"></div>
+
+    </section>
 
     <!-- START Footer -->
     <footer>
@@ -83,7 +87,9 @@
         </div>
     </footer>
     <!-- END Footer -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>
+<!-- <i class="fa-solid fa-pause"></i> -->
+<!-- <i class="fa-solid fa-play"></i> -->
