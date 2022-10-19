@@ -173,6 +173,13 @@ header .container i:hover {
     gap: 2rem;
 }
 
+.skills-icons i {
+    background: #fff;
+    border-radius: var(--card-border-radius);
+    padding: var(---card-padding);
+    box-shadow: var(--shadow);
+}
+
 /* END Skills Section */
 
 
@@ -337,3 +344,20 @@ footer p {
 @media only screen and (max-width: 425px) {
     /* Small Smartphones [325px -> 425px] */
 }
+
+
+a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+
+
+/* a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+} */
