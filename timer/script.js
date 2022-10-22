@@ -15,7 +15,7 @@ start.addEventListener(`click`, function () {
     if (hou.value <= 0 && min.value <= 0 && sec.value <= 0
         || min.value > 60 || sec.value > 60) {
         flash(inputCard);
-        flashOff(inputCard);
+        // flashOff(inputCard);
         return false;
     }
 
