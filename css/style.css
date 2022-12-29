@@ -146,7 +146,8 @@ header .container i:hover {
     text-align: left;
     font-size: 1.25rem;
     color: #000;
-    Padding: 2rem;
+    padding: 2rem;
+    font-family: "lato";
 }
 
 /* START Skills Section */
