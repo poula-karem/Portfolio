@@ -32,3 +32,5 @@ class MyHeader extends HTMLElement {
     }
 }
 customElements.define('my-header', MyHeader);
+
+// <my-header></my-header>

@@ -18,3 +18,5 @@ class MyFooter extends HTMLElement {
     }
 }
 customElements.define('my-footer', MyFooter);
+
+// <my-footer></my-footer>
