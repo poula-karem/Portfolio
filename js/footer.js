@@ -1,6 +1,6 @@
 class MyFooter extends HTMLElement {
     connectedCallback() {
-        this.textContent = `
+        this.innerHTML = `
         <footer>
         <div class="container">
 
