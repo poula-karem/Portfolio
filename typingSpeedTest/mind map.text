@@ -1,0 +1,9 @@
+1 - Make time general.
+2 - const lvls = {
+    "Easy": 150,
+    "Normal": 100,
+    "Hard": 50
+};
+3 - Select option.
+4 - Dark mode.
+5 - Save score to local storage & show it in website.

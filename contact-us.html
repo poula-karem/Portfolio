@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -18,10 +18,10 @@
 
 
     <!-- CSS Style Sheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contact-me-style.css">
     <!-- Icon -->
-    <link rel="icon" href="../icons/logo.ico">
-    <title>Timer - Poula Karem</title>
+    <link rel="icon" href="icons/logo.ico">
+    <title>Contact Us - AMSSP</title>
 </head>
 
 <body>
@@ -30,21 +30,18 @@
     <header>
         <div class="container">
 
-            <a href="../index.html">
-                <h2 class="logo">Poula</h2>
+            <a href="index.html">
+                <h2 class="logo">AMSSP</h2>
             </a>
 
             <i class="fa-solid fa-bars"></i>
             <nav>
                 <ul class="navigations">
                     <li>
-                        <a href="../index.html#skills-section">Skills</a>
+                        <a href="index.html#apps-section">APPS</a>
                     </li>
                     <li>
-                        <a href="../index.html#projects-section">Projects</a>
-                    </li>
-                    <li>
-                        <a href="../contact-me.html" class="active">Contact Me</a>
+                        <a href="contact-me.html" class="active">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -56,29 +53,26 @@
     </header>
     <!-- END header -->
 
-    <section id="main-section">
 
-        <div class="start-container">
-            <div class="card">
-                <input type="number" placeholder="Hours" class="hou">
-                <input type="number" placeholder="Minutes" class="min">
-                <input type="number" placeholder="Seconds" class="sec">
+    <div class="form-container">
+
+        <!-- START Form -->
+        <form action="mailto:paulakaremp@gmail.com" method="post">
+
+            <div class="name">
+                <input type="text" placeholder="First Name" name="First Name" value="">
+                <input type="text" placeholder="Last Name" name="Last Name" value="">
             </div>
-        </div>
+            <input class="email" type="email" placeholder="Your E-Mail" name="E-Mail" value="">
 
-        <div class="btn start-btn">
-            <button class="start blue">Start Timer</button>
-            <button class="start-pomodoro red">Pomodoro Timer</button>
-        </div>
+            <textarea class="massage" name="Massage" placeholder="Type your massage here"></textarea>
 
-        <!-- ======== -->
+            <button class="send" type="submit">Send</button>
 
-        <div class="timer-container">
-            <div class="cards"></div>
+        </form>
 
-            <div class="btn timer-btn"></div>
-
-    </section>
+    </div>
+    <!-- END Form -->
 
     <!-- START Footer -->
     <footer>
@@ -86,19 +80,15 @@
 
             <div class="footer-icons">
                 <a href="contact-me.html"><i class="fa-solid fa-envelope"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/poula-karem"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/Poula-Karem"><i class="fa-brands fa-square-github"></i></a>
+                <a target="_blank" href="https://github.com/poula-karem/AMSSP"><i
+                        class="fa-brands fa-square-github"></i></a>
             </div>
-            <p>&copy; Poula Karem</p>
+            <p>&copy; AMSSP</p>
 
         </div>
     </footer>
     <!-- END Footer -->
-    <script src="../js/header.js"></script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
-<!-- <i class="fa-solid fa-pause"></i> -->
-<!-- <i class="fa-solid fa-play"></i> -->
