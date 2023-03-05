@@ -77,6 +77,12 @@
     margin: auto;
 }
 
+.apps-container h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
 .apps-container .cards {
     text-align: center;
     margin: auto;
@@ -105,12 +111,6 @@
     border-radius: var(--card-border-radius);
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-}
-
-.apps-container h3 {
-    text-align: center;
-    padding-bottom: 4rem;
-    font-size: 2rem;
 }
 
 .apps-container .card .info {
