@@ -42,6 +42,40 @@
     Padding: 2rem;
 }
 
+/* START Skills Section */
+#skills-section {
+    background: #f0f0f0;
+    Padding: 3rem;
+}
+
+.skills-container {
+    width: 80%;
+    margin: auto;
+}
+
+.skills-container h3 {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.skills-icons {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skills-icons i {
+    background: #fff;
+    border-radius: var(--card-border-radius);
+    padding: var(---card-padding);
+    box-shadow: var(--shadow);
+}
+
+/* END Skills Section */
+
+
 /* START Info Section */
 
 #info-section {
@@ -66,46 +100,44 @@
 
 /* START Projects Section */
 
-#apps-section {
+#projects-section {
     background: #f0f0f0;
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
 
-.apps-container {
-    width: 100%;
+.projects-container {
+    width: 80%;
     margin: auto;
 }
 
-.apps-container h3 {
+.projects-container h3 {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     font-size: 2rem;
 }
 
-.apps-container .cards {
+.projects-container .cards {
     text-align: center;
     margin: auto;
-    width: 90%;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    width: 80%;
 }
 
-.apps-container .card {
+.projects-container .card {
     border-radius: var(--card-border-radius);
     background: #fff;
     width: 15rem;
-    height: 22rem;
+    height: 20rem;
     box-shadow: var(--shadow);
     transition: 0.7s ease;
-    margin: 2rem auto;
+    margin: auto;
 }
 
-.apps-container .card:hover {
+.projects-container .card:hover {
     transform: scale(1.1);
 }
 
-.apps-container .card img {
+.projects-container .card img {
     width: 15rem;
     height: 10rem;
     border-radius: var(--card-border-radius);
@@ -113,25 +145,23 @@
     border-bottom-left-radius: 0;
 }
 
-.apps-container .card .info {
+.projects-container .card .info {
     text-align: center;
     padding: 1.5rem;
-    font-size: 1rem;
 }
 
-.apps-container .card h4 {
+.projects-container .card h4 {
     color: #000;
     transition: 0.5s ease;
     display: inline-block;
 }
 
-.apps-container .card h4:hover {
+.projects-container .card h4:hover {
     color: var(--links);
 }
 
-.apps-container .card p {
-    padding-top: 1rem;
-    text-align: left;
+.projects-container .card p {
+    padding-top: 1.5rem;
 }
 
 /* END Projects Section */

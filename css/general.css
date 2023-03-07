@@ -77,7 +77,7 @@ header .container i {
 }
 
 nav {
-    width: 12%;
+    width: 20%;
 }
 
 
@@ -124,7 +124,7 @@ footer .container {
 .footer-icons {
     display: flex;
     justify-content: space-between;
-    width: 4%;
+    width: 7%;
 }
 
 .footer-icons a {
